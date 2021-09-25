@@ -139,8 +139,11 @@ export default class Identicon extends Component {
     seedrand(seed);
 
     const color = opts.color || createColor();
+    if (opts.color) createColor();
     const bgcolor = opts.bgColor || createColor();
+    if (opts.bgColor) createColor();
     const spotcolor = opts.spotColor || createColor();
+    if (opts.spotcolor) createColor();
     const imageData = createImageData(size);
     const canvas = setCanvas(this.identicon, imageData, color, scale, bgcolor, spotcolor);
 
