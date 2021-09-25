@@ -143,7 +143,7 @@ export default class Identicon extends Component {
     const bgcolor = opts.bgColor || createColor();
     if (opts.bgColor) createColor();
     const spotcolor = opts.spotColor || createColor();
-    if (opts.spotcolor) createColor();
+    if (opts.spotColor) createColor();
     const imageData = createImageData(size);
     const canvas = setCanvas(this.identicon, imageData, color, scale, bgcolor, spotcolor);
 
